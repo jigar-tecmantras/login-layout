@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  color: #e2e8f0;
+}
+
+body {
+  margin: 0;
+  background-color: #020617;
+}
+
+#root {
+  min-height: 100vh;
+}
