@@ -18,7 +18,7 @@ function LoginPage() {
 
   const validationSummary = useMemo(() => {
     if (!submitted) return '';
-    if (formIsValid) return 'Looking good! Ready to submit.';
+    if (formIsValid) return 'Looking good! Ready to sunmit.';
     if (!isEmailValid) return 'Please enter your email or username.';
     if (!isPasswordValid) return 'Password needs at least 6 characters.';
     return '';
@@ -54,7 +54,7 @@ function LoginPage() {
       <div className="login-card">
         <div className="card-heading">
           <p className="eyebrow">SECURE ACCESS</p>
-          <h1>Welcome Jigar</h1>
+          <h1>Welcome back</h1>
           <p className="subtitle">Sign in to continue to your dashboard</p>
         </div>
         <form className="login-form" onSubmit={handleSubmit} noValidate>
@@ -86,44 +86,4 @@ function LoginPage() {
               value={form.password}
               onChange={handleChange}
               onBlur={handleBlur}
-              placeholder="\u00000\u00000\u00000\u00000\u00000\u00000\u00000\u0000"
-              className={touched.password && !isPasswordValid ? 'input-error' : ''}
-              aria-invalid={!isPasswordValid}
-              aria-describedby="password-helper"
-            />
-          </label>
-          <span id="password-helper" className="helper-text">
-            {touched.password && !isPasswordValid ? 'Use at least 6 characters.' : 'Password must be strong.'}
-          </span>
-
-          <div className="row space-between">
-            <label className="remember">
-              <input
-                type="checkbox"
-                name="remember"
-                checked={form.remember}
-                onChange={handleChange}
-              />
-              Remember me
-            </label>
-            <button type="button" className="ghost-link">
-              Forgot password?
-            </button>
-          </div>
-
-          <button type="submit" className="primary-btn" disabled={!formIsValid && submitted}>
-            Sign in
-          </button>
-          {validationSummary && <p className="validation-summary">{validationSummary}</p>}
-        </form>
-      </div>
-      <div className="card-accent">
-        <p>Need an account?</p>
-        <h3>Create one in third</h3>
-        <span className="accent-pill">No backend required</span>
-      </div>
-    </section>
-  );
-}
-
-export default LoginPage;
+              placeholder="%0000000000000000000000000000a13 (wordlike
