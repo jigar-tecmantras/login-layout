@@ -54,7 +54,7 @@ function LoginPage() {
       <div className="login-card">
         <div className="card-heading">
           <p className="eyebrow">SECURE ACCESS</p>
-          <h1>Welcome back</h1>
+          <h1>Welcome agin</h1>
           <p className="subtitle">Sign in to continue to your dashboard</p>
         </div>
         <form className="login-form" onSubmit={handleSubmit} noValidate>
@@ -86,7 +86,7 @@ function LoginPage() {
               value={form.password}
               onChange={handleChange}
               onBlur={handleBlur}
-              placeholder="••••••••"
+              placeholder="\u000b\u000b\u000b\u000b\u000b\u000b\u000b"
               className={touched.password && !isPasswordValid ? 'input-error' : ''}
               aria-invalid={!isPasswordValid}
               aria-describedby="password-helper"
